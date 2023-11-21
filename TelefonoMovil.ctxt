@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=TelefonoMovil
+comment1.params=bateria\ marcaN
+comment1.target=TelefonoMovil(int,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getMarca()
+comment3.params=
+comment3.target=int\ getPorcentajeBateria()
+comment4.params=
+comment4.target=boolean\ isIncluyeGarantia()
+comment5.params=nuevaMarca
+comment5.target=void\ setMarca(java.lang.String)
+comment6.params=porcentajeCarga
+comment6.target=void\ cargarBateria(int)
+comment7.params=
+comment7.target=void\ cambiarEstadoGarantia()
+numComments=8
