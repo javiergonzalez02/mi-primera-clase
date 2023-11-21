@@ -26,15 +26,36 @@ public class TelefonoMovil {
         marca = nuevaMarca;
     }
 
-    public void cargarBateria(int porcentajeCarga){
+    public void cargarBateria(int porcentajeCarga) {
         porcentajeBateria += porcentajeCarga;
     }
 
-    public void cambiarEstadoGarantia(){
-        if (incluyeGarantia == true){
+    public void cambiarEstadoGarantia() {
+        if (incluyeGarantia) {
             incluyeGarantia = false;
         } else {
             incluyeGarantia = true;
         }
+    }
+
+    public String getObjState() {
+        String garantia;
+        if (incluyeGarantia) {
+            garantia = "si";
+        } else {
+            garantia = "no";
+        }
+
+        return "Marca: " + marca + " | Porcentaje de batería: " + porcentajeBateria + "% | Incluye garantía: " + garantia;
+    }
+
+    public void printObjState() {
+        String garantia;
+        if (incluyeGarantia) {
+            garantia = "si";
+        } else {
+            garantia = "no";
+        }
+        System.out.println("Marca: " + marca + " | Porcentaje de batería: " + porcentajeBateria + "% | Incluye garantía: " + garantia);
     }
 }
