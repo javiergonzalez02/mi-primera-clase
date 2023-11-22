@@ -38,7 +38,7 @@ public class TelefonoMovil {
         }
     }
 
-    public String getObjState() {
+    public String getDetalles() {
         String garantia;
         if (incluyeGarantia) {
             garantia = "si";
@@ -49,7 +49,7 @@ public class TelefonoMovil {
         return "Marca: " + marca + " | Porcentaje de batería: " + porcentajeBateria + "% | Incluye garantía: " + garantia;
     }
 
-    public void printObjState() {
+    public void imprimirDetalles() {
         String garantia;
         if (incluyeGarantia) {
             garantia = "si";
